@@ -5,7 +5,8 @@
   "main": "Result.js",
   "scripts": {
     "buildcss": "tailwindcss build -i ./public/input.css -o ./public/css/tailwindoutput.css",
-    "devstart": "nodemon Result.js"
+    "devstart": "nodemon Result.js",
+    "deploy":"pm2 start Result.js"
   },
   "repository": {
     "type": "git",
