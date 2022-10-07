@@ -23,7 +23,7 @@ document.getElementById('SubmitBtn').addEventListener('click', ()=>{
         console.log(UniversityName, CourseName, SelectSemester, FindValue, SearchValue);
         // Send the data to the server
         var FinalData = {UniversityName:UniversityName, CourseName:CourseName, SelectSemester:SelectSemester, FindValue:FindValue, SearchValue:SearchValue}
-        fetch('http://localhost:3000/search', {
+        fetch('https://result.theankan.live/search', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
