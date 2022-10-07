@@ -81,7 +81,7 @@ document.getElementById('SubmitBtn').addEventListener('click', ()=>{
 // Media query for Sizing Result Box
 function Media(){
     var x = window.matchMedia("(max-width: 353px)");
-    var y = window.matchMedia("(max-width:500px)");
+    var y = window.matchMedia("(max-width:360px)");
     if(x.matches){
     document.getElementById('resulttable').classList.add('overflow-x-auto')
     }
