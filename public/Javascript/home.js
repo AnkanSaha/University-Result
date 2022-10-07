@@ -77,3 +77,23 @@ document.getElementById('SubmitBtn').addEventListener('click', ()=>{
         })
     }
 })
+
+// Media query for Sizing Result Box
+function Media(){
+    var x = window.matchMedia("(max-width: 353px)");
+    var y = window.matchMedia("(max-width:500px)");
+    if(x.matches){
+    document.getElementById('resulttable').classList.add('overflow-x-auto')
+    }
+    else{
+    document.getElementById('resulttable').classList.remove('overflow-x-auto')
+    }
+
+    if(y.matches){
+        document.getElementById('resultview').classList.add('mx-6')
+    }
+    else{
+        document.getElementById('resultview').classList.add('mx-20')
+    }
+}
+setInterval(Media(), 10)

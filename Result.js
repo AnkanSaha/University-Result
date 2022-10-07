@@ -8,7 +8,8 @@ const MongoSearch = require('./Database/MongoDB.js');
 //current directory
 const cuurentDir = __dirname;
 //use all modules
-app.use(cors({origin:'*'}))
+ /* Domain for CORS*/ let Domain = ['http://127.0.0.1:3000','https://result.theankan.live']
+app.use(cors({origin:Domain}))
 app.use(bodyParser.json());
 // start server configuration
 app.listen(port, () => {

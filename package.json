@@ -1,12 +1,13 @@
 {
   "name": "college-result",
-  "version": "1.4.9",
+  "version": "1.6.4",
   "description": "Check Your College Result with ResultNow.",
   "main": "Result.js",
   "scripts": {
     "buildcss": "tailwindcss build -i ./public/input.css -o ./public/css/tailwindoutput.css",
     "devstart": "nodemon Result.js",
-    "deploy":"pm2 start Result.js"
+    "deploy":"pm2 start Result.js --name UniversityResultService",
+    "stop":"pm2 stop Result.js --name UniversityResultService"
   },
   "repository": {
     "type": "git",
