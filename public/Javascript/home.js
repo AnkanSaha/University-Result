@@ -1,4 +1,5 @@
-document.getElementById('SubmitBtn').addEventListener('click', ()=>{
+// Function for Send Search Request To Server
+function SendSearchRequest(){
     document.getElementById('resultview').style.display = 'none'
     document.getElementById('SubmitBtn').innerText = 'Loading...'
     document.getElementById('SubmitBtn').disabled = true
@@ -23,7 +24,7 @@ document.getElementById('SubmitBtn').addEventListener('click', ()=>{
         console.log(UniversityName, CourseName, SelectSemester, FindValue, SearchValue);
         // Send the data to the server
         var FinalData = {UniversityName:UniversityName, CourseName:CourseName, SelectSemester:SelectSemester, FindValue:FindValue, SearchValue:SearchValue}
-        fetch('https://result.theankan.live/search', {
+        fetch('http://localhost:3000/search', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -76,8 +77,17 @@ document.getElementById('SubmitBtn').addEventListener('click', ()=>{
             alert('Something Error... Please Try Again')
         })
     }
-})
+}
 
+// When Button Clicked this function will triggered
+document.getElementById('SubmitBtn').addEventListener('click', ()=>{
+    SendSearchRequest()
+})
+document.getElementById('SearchValue').addEventListener('keypress', (keyName)=>{
+    if(keyName.key === 'Enter'){
+        SendSearchRequest()
+    }
+})
 // Media query for Sizing Result Box
 function Media(){
     var x = window.matchMedia("(max-width: 353px)");
@@ -97,3 +107,8 @@ function Media(){
     }
 }
 setInterval(Media(), 10)
+
+// Disable Right click
+document.addEventListener('contextmenu', (e)=>{
+    e.preventDefault()
+})
