@@ -4,7 +4,7 @@ const MongoModel = require(`../Database/Model.js`);
 function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
     // BA Connection
     if(CourseName == "BA_Results"){
-        mongoose.connect(`mongodb+srv://Ankan157:Ankan1567@serverlessdatabaseforre.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`).then(()=>{
+        mongoose.connect(`mongodb+srv://Ankan157:Ankan1567@resultshowdatabse.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`).then(()=>{
             console.log('Connected with BA_Results')
             // BA First Semester
             if(Semester == '1st Semester'){
@@ -16,6 +16,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -28,6 +29,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -45,6 +47,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -57,6 +60,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -73,6 +77,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -85,6 +90,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -101,6 +107,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -113,6 +120,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -129,6 +137,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -141,6 +150,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -157,6 +167,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -169,6 +180,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -183,7 +195,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
     }
     // B Com Connection
     else if(CourseName == "BCom_Results"){
-        mongoose.connect(`mongodb+srv://Ankan157:Ankan1567@serverlessdatabaseforre.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`).then(()=>{
+        mongoose.connect(`mongodb+srv://Ankan157:Ankan1567@resultshowdatabse.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`).then(()=>{
             console.log('Connected With BCom_Results');
             // B Com 1st Semester
             if(Semester == '1st Semester'){
@@ -194,6 +206,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -206,6 +219,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -221,6 +235,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -233,6 +248,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -248,6 +264,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -260,6 +277,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -275,6 +293,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -287,6 +306,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -302,6 +322,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -314,6 +335,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -329,6 +351,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -341,6 +364,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -355,7 +379,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
     }
     // BSc Connection
     else if(CourseName == "BSC_Results"){
-        mongoose.connect(`mongodb+srv://Ankan157:Ankan1567@serverlessdatabaseforre.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`).then(()=>{
+        mongoose.connect(`mongodb+srv://Ankan157:Ankan1567@resultshowdatabse.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`).then(()=>{
             console.log('Connected With BSC_Results');
             // BSc 1st Semester
             if(Semester == '1st Semester'){
@@ -366,6 +390,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -378,6 +403,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -393,6 +419,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -405,6 +432,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -420,6 +448,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -432,6 +461,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -447,6 +477,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -459,6 +490,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -474,6 +506,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -486,6 +519,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -501,6 +535,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
@@ -513,6 +548,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses){
                             mongoose.connection.close()
                         }
                         else if(data){
+                            console.log(data)
                             responses.status(200).json(data)
                             mongoose.connection.close()
                         }
