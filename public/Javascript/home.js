@@ -1,5 +1,6 @@
 // Function for Send Search Request To Server
 function SendSearchRequest(){
+    document.getElementById('bodytag').classList.add('overflow-hidden')
     document.getElementById('resultview').style.display = 'none'
     document.getElementById('SubmitBtn').innerText = 'Loading...'
     document.getElementById('SubmitBtn').disabled = true
@@ -41,6 +42,8 @@ function SendSearchRequest(){
                     alert('No Result available with this details...')
                 }
                 else if(data[0] != undefined){
+                    alert('Result Found Successfully')
+                    document.getElementById('bodytag').classList.remove('overflow-hidden')
                     var name = data[0].Column2
                     var Roll_Number = data[0].Column1
                     var Registration_Number =data[0].Column3
