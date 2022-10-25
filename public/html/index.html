@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check Your University Result Instantly with full details">
+    <meta name="keywords" content="Result, University, kalyani university">
+    <link rel="shortcut icon" href="https://www.freeiconspng.com/thumbs/results-icon-png/results-icon-png-13.png" type="image/x-icon">
+     <!-- custom css file -->
+    <link rel="stylesheet" href="../css/home.css">
+     <!-- tailwind base file for development  -->
+    <link rel="stylesheet" href="/public/css/tailwindbase.css">
+    <!-- tailwind for production  -->
+    <link rel="stylesheet" href="../css/tailwind.css">
+    <title>Home - Check Your College Result Instantly</title>
+</head>
+<body>
+    <main>
+        <h1 class="bg-emerald-400 cursor-pointer text-center italic text-sm md:text-base lg:text-3xl pt-2 pb-2 text-red-800">Check Your Kalyani University Result Instantly-2022</h1>
+        <br>
+        <div class="flex flex-col lg:mx-12 mx-6 lg:pt-2 mt-12 inputer items-center pt-10 rounded-lg sm:rounded-sm md:rounded-md px-5">
+            <h2 class="text-yellow-600 font-semibold italic pb-5 war md:text-sm lg:text-xl font-mono">Fill All Details To check your result</h2>
+            <select name="select_university" id="UniversityName" class="text-center lg:font-mono mb-5 bg-red-500 px-5 py-3 rounded-lg text-white">
+                <option value="name"> Select University Name </option>
+                <option value="KU"> University of Kalyani</option>
+            </select>
+            <select name="Course" id="CourseName" class="text-white text-center mb-5 lg:font-mono px-4 py-3 bg-cyan-900 rounded-xl">
+                <option value="Select_Course">Select Your Course</option>
+                <option value="BA_Results"> Baclelor's of Arts(B.A)</option>
+                <option value="BCom_Results"> Bachelor's of Commerce (B.Com)</option>
+                <option value="BSC_Results"> Bachelor's of Science (B.Sc)</option>
+            </select>
+            <select name="Semester" id="SelectSemester" class="text-white text-center mb-5 lg:font-mono px-6 py-3 bg-yellow-900 rounded-xl">
+                <option value="Select_Semester"> Select Semester </option>
+                <option value="1st Semester"> 1st Semester </option>
+                <option value="2nd Semester"> 2nd Semester </option>
+                <option value="3rd Semester"> 3rd Semester</option>
+                <option value="4th Semester"> 4th Semester</option>
+                <option value="5th Semester"> 5th Semester</option>
+                <option value="6th Semester"> 6th Semester</option>
+            </select>
+        <select name="Method" id="FindValue" class="text-white text-center mb-5 lg:font-mono px-5 py-3 bg-purple-800 rounded-xl">
+            <option value="Select_Method">Select Method To Search</option>
+            <option value="RegistrationNumber"> Search By Registration Number</option>
+            <option value="RollNumber"> Search By Roll Number</option>
+        </select>
+        <input type="text" name="SearchValue" id="SearchValue" class="text-black text-center mb-5 lg:font-mono px-3 rounded-lg bg-yellow-100" placeholder="Enter Your Value" required>
+        <button class="bg-neutral-900 text-center mb-5 lg:font-mono px-9 rounded py-3" id="SubmitBtn"> Search Now </button>
+        </div>
+        <br>
+        <br>
+        <div class="mx-6" id="resultview">
+            <div class="relative" id="resulttable">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="py-3 px-6 rounded-l-lg">
+                                Candidate Name
+                            </th>
+                            <th scope="col" class="py-3 px-6 rounded-r-lg" id="CandidateName">
+                                ${Name}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Registration Number
+                            </th>
+                            <td class="py-4 px-6" id="RegistrationNumber">
+                               ${Registration Number}
+                            </td>
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Roll Number
+                            </th>
+                            <td class="py-4 px-6" id="RollNumber">
+                                ${Roll Number}
+                            </td>
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Status
+                            </th>
+                            <td class="py-4 px-6" id="status">
+                                ${Status}
+                            </td>
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                SGPA
+                            </th>
+                            <td class="py-4 px-6" id="SGPA">
+                                ${SGPA}
+                            </td>
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Percentage
+                            </th>
+                            <td class="py-4 px-6" id="Total_Percentage">
+                                ${Percentage}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flex flex-col items-center">
+            <p class="text-center text-black italic font-light pt-5 pb-5">This is not a official site of Kalyani University </p>
+        </div>
+    </footer>
+</body>
+<script src="../Javascript/home.js"></script>
+</html>
