@@ -66,4 +66,4 @@ var SixthSemSceema = mongoose.Schema(SixthSemSearchModel);
 var SixthSemModel = mongoose.model('6th Semsester', SixthSemSceema)
 
 // Exporting the model
-module.exports = {  FirstSemModel, SecondSemModel, ThirdSemModel, FourthSemModel, FifthSemModel, SixthSemModel }
+module.exports = {FirstSemModel, SecondSemModel, ThirdSemModel, FourthSemModel, FifthSemModel, SixthSemModel}

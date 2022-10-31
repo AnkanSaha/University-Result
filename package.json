@@ -5,10 +5,9 @@
   "main": "Result.js",
   "scripts": {
     "buildcss": "tailwindcss build -i ./public/css/tailwindbase.css -o ./public/css/tailwind.css -c ./tailwind.config.js --minify",
-    "devstart": "nodemon Result.js",
-    "deploy": "pm2 start Result.js --name UniversityResultService",
-    "stop": "pm2 stop Result.js --name UniversityResultService",
-    "start": "vite --host"
+    "dev": "nodemon Result.js",
+    "start": "pm2 start Result.js --name UniversityResultService --watch -i max",
+    "stop": "pm2 stop Result.js --name UniversityResultService"
   },
   "repository": {
     "type": "git",

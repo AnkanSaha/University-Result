@@ -4,12 +4,9 @@ const app = express();
 const port = 3000;
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const MongoSearch = require('./Database/MongoDB.js');
 const Router = require('./route');
-//current directory
-const cuurentDir = __dirname;
 //use all modules
- /* Domain CORS*/ let Domain = ['*']
+ /* Domain CORS*/ let Domain = ['http://localhost:3000', 'https://127.0.0.1:3000', 'https://result.theankan.live']
 app.use(cors({origin:Domain}))
 app.use(bodyParser.json());
 // start server configuration
@@ -18,6 +15,5 @@ app.listen(port, () => {
 })
 // configuration for static files
 app.use(express.static('public'));
-
 // Configure Express Routing
  app.use(Router)
