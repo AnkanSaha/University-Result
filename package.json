@@ -3,6 +3,9 @@
   "version": "1.6.4",
   "description": "Check Your College Result with Result Now.",
   "main": "Result.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "buildcss": "tailwindcss build -i ./public/css/tailwindbase.css -o ./public/css/tailwind.css -c ./tailwind.config.js --minify",
     "dev": "nodemon Result.js",
