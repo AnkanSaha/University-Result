@@ -2,11 +2,12 @@ const mongoose = require("mongoose");
 const MongoModel = require(`../Database/Model.js`);
 
 function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses) {
+  const MongoURL = `mongodb+srv://Ankan157:Ankan1567@projectcluster.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`;
   // BA Connection
   if (CourseName == "BA_Results") {
     mongoose
       .connect(
-        `mongodb+srv://Ankan157:Ankan1567@resultshowdatabse.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`
+        MongoURL
       )
       .then(() => {
         console.log("Connected with BA_Results");
@@ -243,7 +244,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses) {
   else if (CourseName == "BCom_Results") {
     mongoose
       .connect(
-        `mongodb+srv://Ankan157:Ankan1567@resultshowdatabse.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`
+        MongoURL
       )
       .then(() => {
         console.log("Connected With BCom_Results");
@@ -474,7 +475,7 @@ function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses) {
   else if (CourseName == "BSC_Results") {
     mongoose
       .connect(
-        `mongodb+srv://Ankan157:Ankan1567@resultshowdatabse.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`
+        MongoURL
       )
       .then(() => {
         console.log("Connected With BSC_Results");
