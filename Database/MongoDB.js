@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const MongoModel = require(`../Database/Model.js`);
 
 function MongoSearch(CourseName, Semester, FindMethod, SearchValue, responses) {
-  const MongoURL = `mongodb+srv://Ankan157:Ankan1567@projectcluster.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`;
+  const MongoURL = `mongodb+srv://Ankan157:Ankan1567@serverlessdb.q1ops.mongodb.net/${CourseName}?retryWrites=true&w=majority`;
   // BA Connection
   if (CourseName == "BA_Results") {
     mongoose

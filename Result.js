@@ -5,7 +5,6 @@ const port = 3000;
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const Router = require("./route");
-const helmet = require("helmet");
 //use all modules
 /* Domain CORS*/ let Domain = [
   "http://localhost:3000",
@@ -22,5 +21,3 @@ app.listen(port, () => {
 app.use(express.static("public"));
 // Configure Express Routing
 app.use(Router);
-// using helmet for security
-app.use(helmet({contentSecurityPolicy: false}));
