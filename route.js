@@ -5,7 +5,7 @@ const MongoSearch = require("./Database/MongoDB.js");
 
 //configuration for serve static files
 app.get("/", (request, response) => {
-  response.status(200).sendFile(`${cuurentDir}/public/html/ui.html`);
+  response.status(200).sendFile(`${cuurentDir}/public/html/Result.html`);
 });
 
 //API Endpoint
