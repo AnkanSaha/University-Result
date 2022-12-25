@@ -63,7 +63,7 @@ document.getElementById("SearchBtn").addEventListener("click", async () => {
       SearchValue: SearchValue,
     };
 
-    let response = await fetch("/search", {
+    let response = await fetch("/api/v3/result/find", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

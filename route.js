@@ -9,12 +9,12 @@ app.get("/", (request, response) => {
 });
 
 //API Endpoint
-app.post("/search", (request, response) => {
-  var UniversityName = request.body.UniversityName;
-  var CourseName = request.body.CourseName;
-  var Semester = request.body.SelectSemester;
-  var FindMethod = request.body.FindValue;
-  var SearchValue = request.body.SearchValue;
+app.post("/api/v3/result/find", (request, response) => {
+  let UniversityName = request.body.UniversityName;
+  let CourseName = request.body.CourseName;
+  let Semester = request.body.SelectSemester;
+  let FindMethod = request.body.FindValue;
+  let SearchValue = request.body.SearchValue;
   console.log(UniversityName, CourseName, Semester, FindMethod, SearchValue);
   MongoSearch.MongoSearch(
     CourseName,
