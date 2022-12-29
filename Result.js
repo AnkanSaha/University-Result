@@ -1,21 +1,4 @@
-const os = require('os');
-const cluster = require('cluster');
-const MaxWorkwers = os.cpus().length;
-console.log('MaxWorkwers', MaxWorkwers);
-
-if(cluster.isMaster){
-  let StartWorker = 0 
-  while(StartWorker < MaxWorkwers){
-    cluster.fork();
-    StartWorker++;
-  }
-  cluster.on('exit', ()=>{
-    console.log('worker died');
-    cluster.fork();
-  })
-}
-else{
-  //import all modules that required
+//import all modules that required
 const express = require("express");
 const app = express();
 const port = 3000;
@@ -38,4 +21,3 @@ app.listen(port, () => {
 app.use(express.static("public"));
 // Configure Express Routing
 app.use(Router);
-}
